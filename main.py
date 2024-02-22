@@ -1,10 +1,12 @@
-# Furniture.py - This program calculates profits and sales prices for a furniture company.
+# Furniture.py - This program calculates profits and sales prices for a furniture company
 
 itemName = "TV Stand"
 retailPrice = 325.00
 wholesalePrice = 200.00
 profit = retailPrice - wholesalePrice
-salePrice = retailPrice - ((25 * retailPrice)/100)
+salePercentage = 25/100
+# SalePercentage defined so the sale amount can change easily as the owner needs 
+salePrice = retailPrice * (1- salePercentage)
 saleProfit = salePrice - wholesalePrice
 
 
